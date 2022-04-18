@@ -19,7 +19,7 @@ class GoogleAuth extends React.Component {
 
           // Handle initial sign-in state. (Determine if user is already signed in.)
           this.user = this.auth.currentUser.get();
-          this.updateSigninState(this.auth.isSignedIn);
+          this.updateSigninState(this.auth.isSignedIn.get());
         });
     });
   }
